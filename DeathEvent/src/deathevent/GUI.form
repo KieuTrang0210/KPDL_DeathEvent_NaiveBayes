@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Predict Mortality Risk"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="serum_sodium" alignment="0" min="-2" pref="285" max="-2" attributes="0"/>
+                              <Component id="sex" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                              <Component id="time" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
+                              <Component id="smoking" min="-2" pref="82" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtPlatelets" alignment="0" pref="223" max="32767" attributes="0"/>
+                              <Component id="txtSerumCreatinine" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtSerumSodium" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtTime" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cbxSmoking" alignment="0" pref="223" max="32767" attributes="0"/>
+                              <Component id="cbxSex" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="creatinine_phosphokinase" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                              <Component id="diabetes" min="-2" pref="143" max="-2" attributes="0"/>
+                              <Component id="ejection_fraction" alignment="0" min="-2" pref="234" max="-2" attributes="0"/>
+                              <Component id="high_blood_pressure" min="-2" pref="220" max="-2" attributes="0"/>
+                              <Component id="anaemia" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                              <Component id="age" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtErrEjectionFraction" max="32767" attributes="0"/>
+                              <Component id="txtCreatininePhosphokinase" max="32767" attributes="0"/>
+                              <Component id="txtAge" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtEjectionFraction" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtErrAge" alignment="0" min="-2" pref="199" max="-2" attributes="0"/>
+                                      <Component id="cbxHighBloodPressure" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                                      <Component id="cbxDiabetes" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                                      <Component id="cbxAnaemia" alignment="0" min="-2" pref="94" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="24" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="platelets" min="-2" pref="308" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="serum_creatinine" min="-2" pref="326" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="btnPredict" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="btnReset" min="-2" pref="98" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel1" min="-2" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtDeathEvent" min="-2" pref="112" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="75" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="age" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAge" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+              <Component id="txtErrAge" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cbxAnaemia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="anaemia" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtCreatininePhosphokinase" min="-2" max="-2" attributes="0"/>
+                  <Component id="creatinine_phosphokinase" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="diabetes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbxDiabetes" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="ejection_fraction" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="txtEjectionFraction" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtErrEjectionFraction" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="high_blood_pressure" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbxHighBloodPressure" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="platelets" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPlatelets" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="serum_creatinine" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtSerumCreatinine" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="serum_sodium" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="txtSerumSodium" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="sex" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbxSex" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cbxSmoking" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="smoking" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="time" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTime" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtDeathEvent" max="32767" attributes="0"/>
+                  <Component id="jLabel1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnReset" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="btnPredict" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnPredict">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Predict"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPredictActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="age">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Age (tu&#x1ed5;i):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="anaemia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Anaemia (thi&#x1ebf;u m&#xe1;u):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="creatinine_phosphokinase">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Creatinine Phosphokinase (mcg/L):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="diabetes">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Diabetes (ti&#x1ec3;u &#x111;&#x1b0;&#x1edd;ng):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ejection_fraction">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ejection Fraction (ph&#xe2;n su&#x1ea5;t t&#x1ed1;ng m&#xe1;u %):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="high_blood_pressure">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="High Blood Pressure (cao huy&#x1ebf;t &#xe1;p):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="platelets">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Platelets (l&#x1b0;&#x1ee3;ng ti&#x1ec3;u c&#x1ea7;u trong m&#xe1;u - kilo ti&#x1ec3;u c&#x1ea7;u / mL):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="serum_creatinine">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Serum Creatinine (n&#x1ed3;ng &#x111;&#x1ed9; creatinine huy&#x1ebf;t thanh - mg/dL):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="serum_sodium">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Serum Sodium (n&#x1ed3;ng &#x111;&#x1ed9; natri huy&#x1ebf;t thanh - mEq/L):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="sex">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sex:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="smoking">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Smoking:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="time">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Time:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAge">
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="txtAge"/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAgeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCreatininePhosphokinase">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEjectionFraction">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPlatelets">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPlateletsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSerumCreatinine">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSerumSodium">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTime">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbxAnaemia">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Yes"/>
+            <StringItem index="1" value="No"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbxDiabetes">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Yes"/>
+            <StringItem index="1" value="No"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbxHighBloodPressure">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Yes"/>
+            <StringItem index="1" value="No"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbxSex">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Male"/>
+            <StringItem index="1" value="Female"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cbxSmoking">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Yes"/>
+            <StringItem index="1" value="No"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtDeathEvent">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="3"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="33" red="33" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrAge">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="0" red="33" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Predict:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrEjectionFraction">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnReset">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reset"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResetActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
