@@ -69,10 +69,17 @@ public class GUI extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtErrEjectionFraction = new javax.swing.JLabel();
         btnReset = new javax.swing.JButton();
+        txtErrCreatininePhosphokinase = new javax.swing.JLabel();
+        txtErrPlatelets = new javax.swing.JLabel();
+        txtErrSerumCreatinine = new javax.swing.JLabel();
+        txtErrSerumSodium = new javax.swing.JLabel();
+        txtErrTime = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Predict Mortality Risk");
 
+        btnPredict.setBackground(new java.awt.Color(0, 255, 0));
+        btnPredict.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnPredict.setText("Predict");
         btnPredict.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,9 +101,9 @@ public class GUI extends javax.swing.JFrame {
 
         platelets.setText("Platelets (lượng tiểu cầu trong máu - kilo tiểu cầu / mL):");
 
-        serum_creatinine.setText("Serum Creatinine (nồng độ creatinine huyết thanh - mg/dL):");
+        serum_creatinine.setText("Serum Creatinine (mức độ creatinine huyết thanh - mg/dL):");
 
-        serum_sodium.setText("Serum Sodium (nồng độ natri huyết thanh - mEq/L):");
+        serum_sodium.setText("Serum Sodium (mức độ natri huyết thanh - mEq/L):");
 
         sex.setText("Sex:");
 
@@ -139,6 +146,8 @@ public class GUI extends javax.swing.JFrame {
         txtErrEjectionFraction.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         txtErrEjectionFraction.setForeground(new java.awt.Color(255, 0, 51));
 
+        btnReset.setBackground(new java.awt.Color(204, 204, 204));
+        btnReset.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnReset.setText("Reset");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,134 +155,158 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        txtErrCreatininePhosphokinase.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        txtErrCreatininePhosphokinase.setForeground(new java.awt.Color(255, 0, 51));
+
+        txtErrPlatelets.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        txtErrPlatelets.setForeground(new java.awt.Color(255, 0, 51));
+
+        txtErrSerumCreatinine.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        txtErrSerumCreatinine.setForeground(new java.awt.Color(255, 0, 51));
+
+        txtErrSerumSodium.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        txtErrSerumSodium.setForeground(new java.awt.Color(255, 0, 51));
+
+        txtErrTime.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        txtErrTime.setForeground(new java.awt.Color(255, 0, 51));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(serum_sodium, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(sex, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(smoking, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(59, 59, 59)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtPlatelets, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
-                                .addComponent(txtSerumCreatinine)
-                                .addComponent(txtSerumSodium)
-                                .addComponent(txtTime)
-                                .addComponent(cbxSmoking, 0, 223, Short.MAX_VALUE)
-                                .addComponent(cbxSex, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(diabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(ejection_fraction, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(high_blood_pressure, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(anaemia, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(creatinine_phosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(84, 84, 84)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtErrEjectionFraction, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtCreatininePhosphokinase)
-                                .addComponent(txtAge)
-                                .addComponent(txtEjectionFraction)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtErrAge, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cbxHighBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cbxDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(cbxAnaemia, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(0, 24, Short.MAX_VALUE))))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(platelets, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(36, 36, 36))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(serum_creatinine, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(btnPredict, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(71, 71, 71)))
-                            .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtDeathEvent, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(75, Short.MAX_VALUE))
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cbxDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ejection_fraction, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(diabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(high_blood_pressure, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbxHighBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(146, 146, 146)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(cbxSex, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(sex, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(smoking, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbxSmoking, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtTime, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                                    .addComponent(txtErrTime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(txtEjectionFraction, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(anaemia, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cbxAnaemia, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(creatinine_phosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCreatininePhosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtErrCreatininePhosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtErrAge, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(platelets, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(serum_creatinine, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtSerumCreatinine, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(serum_sodium, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(txtErrSerumSodium, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtSerumSodium, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE))
+                                    .addComponent(txtErrSerumCreatinine, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(txtErrPlatelets, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(txtPlatelets, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtDeathEvent, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtErrEjectionFraction, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(222, 222, 222)
+                        .addComponent(btnPredict, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(72, 72, 72)
+                        .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(11, 11, 11)
+                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(age)
-                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(1, 1, 1)
-                .addComponent(txtErrAge)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(platelets))
+                .addGap(4, 4, 4)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbxAnaemia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(anaemia))
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtCreatininePhosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(creatinine_phosphokinase))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(diabetes)
-                    .addComponent(cbxDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(ejection_fraction))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(txtEjectionFraction, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtErrEjectionFraction)
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(high_blood_pressure)
-                    .addComponent(cbxHighBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(platelets)
+                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtPlatelets, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtErrAge, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(anaemia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cbxAnaemia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtErrPlatelets, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serum_creatinine)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtSerumCreatinine, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtErrSerumCreatinine, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(serum_creatinine)
-                    .addComponent(txtSerumCreatinine, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(serum_sodium, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(creatinine_phosphokinase)
+                    .addComponent(serum_sodium, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCreatininePhosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtSerumSodium, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtErrCreatininePhosphokinase, javax.swing.GroupLayout.DEFAULT_SIZE, 10, Short.MAX_VALUE)
+                    .addComponent(txtErrSerumSodium, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sex)
+                    .addComponent(diabetes))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbxDiabetes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbxSex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbxSmoking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ejection_fraction)
                     .addComponent(smoking))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(time)
-                    .addComponent(txtTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtDeathEvent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(22, 22, 22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPredict, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24))
+                    .addComponent(txtEjectionFraction, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbxSmoking, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtErrEjectionFraction, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(high_blood_pressure)
+                    .addComponent(time))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbxHighBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtErrTime)
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(txtDeathEvent, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnPredict, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(62, 62, 62))
         );
 
         txtAge.getAccessibleContext().setAccessibleName("txtAge");
@@ -283,18 +316,27 @@ public class GUI extends javax.swing.JFrame {
 
     @SuppressWarnings("empty-statement")
     private void btnPredictActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPredictActionPerformed
-        
-        int age = Integer.parseInt(txtAge.getText());
+
+        String age_input = txtAge.getText().trim();
         String age_label = "";
-        if (age >= 0 && age <= 48) { age_label = "0_48";}
-        else if (age > 48 && age <= 56) { age_label = "49_56";}
-        else if (age > 56 && age <= 64) { age_label = "57_64";}
-        else if (age > 64 && age <= 71) { age_label = "65_71";}
-        else if (age > 71 && age <= 79) { age_label = "72_79";}
-        else if (age > 79 && age <= 87) { age_label = "80_87";}
-        else if (age > 87 && age <= 120) { age_label = "88_120";}
-        else txtErrAge.setText("Invalid age");
-        
+        if (age_input.isEmpty()) {
+            txtErrAge.setText("Please enter a value.");
+        } else {
+            try {
+                int age = Integer.parseInt(age_input);
+                if (age > 0 && age <= 48) { age_label = "0_48";}
+                else if (age > 48 && age <= 56) { age_label = "49_56";}
+                else if (age > 56 && age <= 64) { age_label = "57_64";}
+                else if (age > 64 && age <= 71) { age_label = "65_71";}
+                else if (age > 71 && age <= 79) { age_label = "72_79";}
+                else if (age > 79 && age <= 87) { age_label = "80_87";}
+                else if (age > 87 && age <= 120) { age_label = "88_120";}
+                else txtErrAge.setText("Please enter an integer between 1 and 120");
+            } catch (NumberFormatException e) {
+                txtErrAge.setText("Please enter an integer between 1 and 120");
+            }
+        }
+     
         String anaemia = cbxAnaemia.getItemAt(cbxAnaemia.getSelectedIndex());
         String anaemia_label = "";
         if (anaemia.equals("Yes")) {
@@ -303,18 +345,27 @@ public class GUI extends javax.swing.JFrame {
              anaemia_label = "0";
         }
         
-        int creatinine_phosphokinase = Integer.parseInt(txtCreatininePhosphokinase.getText());
+        String creatinine_phosphokinase_input = txtCreatininePhosphokinase.getText().trim();
         String creatinine_phosphokinase_label = "";
-        if (creatinine_phosphokinase >= 0 && creatinine_phosphokinase <= 894) { creatinine_phosphokinase_label = "0_894";}
-        else if (creatinine_phosphokinase > 894 && creatinine_phosphokinase <= 1745) { creatinine_phosphokinase_label = "895_1745";}
-        else if (creatinine_phosphokinase > 1745 && creatinine_phosphokinase <= 2636) { creatinine_phosphokinase_label = "1746_2636";}
-        else if (creatinine_phosphokinase > 2636 && creatinine_phosphokinase <= 3507) { creatinine_phosphokinase_label = "2637_3507";}
-        else if (creatinine_phosphokinase > 3507 && creatinine_phosphokinase <= 4377) { creatinine_phosphokinase_label = "3508_4377";}
-        else if (creatinine_phosphokinase > 4377 && creatinine_phosphokinase <= 5248) { creatinine_phosphokinase_label = "4378_5248";}
-        else if (creatinine_phosphokinase > 5248 && creatinine_phosphokinase <= 6119) { creatinine_phosphokinase_label = "5249_6119";}
-        else if (creatinine_phosphokinase > 6119 && creatinine_phosphokinase <= 6990) { creatinine_phosphokinase_label = "6120_6990";}
-        else if (creatinine_phosphokinase > 6990) { creatinine_phosphokinase_label = "6991_max";}
- 
+        if (creatinine_phosphokinase_input.isEmpty()) {
+            txtErrCreatininePhosphokinase.setText("Please enter a value.");
+        } else {
+            try {
+                int creatinine_phosphokinase = Integer.parseInt(creatinine_phosphokinase_input);
+                if (creatinine_phosphokinase >= 0 && creatinine_phosphokinase <= 894) { creatinine_phosphokinase_label = "0_894";}
+                else if (creatinine_phosphokinase > 894 && creatinine_phosphokinase <= 1745) { creatinine_phosphokinase_label = "895_1745";}
+                else if (creatinine_phosphokinase > 1745 && creatinine_phosphokinase <= 2636) { creatinine_phosphokinase_label = "1746_2636";}
+                else if (creatinine_phosphokinase > 2636 && creatinine_phosphokinase <= 3507) { creatinine_phosphokinase_label = "2637_3507";}
+                else if (creatinine_phosphokinase > 3507 && creatinine_phosphokinase <= 4377) { creatinine_phosphokinase_label = "3508_4377";}
+                else if (creatinine_phosphokinase > 4377 && creatinine_phosphokinase <= 5248) { creatinine_phosphokinase_label = "4378_5248";}
+                else if (creatinine_phosphokinase > 5248 && creatinine_phosphokinase <= 6119) { creatinine_phosphokinase_label = "5249_6119";}
+                else if (creatinine_phosphokinase > 6119 && creatinine_phosphokinase <= 6990) { creatinine_phosphokinase_label = "6120_6990";}
+                else if (creatinine_phosphokinase > 6990) { creatinine_phosphokinase_label = "6991_max";}
+            } catch (NumberFormatException e) {
+                txtErrCreatininePhosphokinase.setText("Please enter an integer.");
+            }
+        }
+                 
         String diabetes = cbxDiabetes.getItemAt(cbxDiabetes.getSelectedIndex());
          String diabetes_label = "";
         if (anaemia.equals("Yes")) {
@@ -323,15 +374,24 @@ public class GUI extends javax.swing.JFrame {
              diabetes_label = "0";
         }
         
-        int ejection_fraction = Integer.parseInt(txtEjectionFraction.getText());
+        String ejection_fraction_input = txtEjectionFraction.getText().trim();
         String ejection_fraction_label = "";
-        if (ejection_fraction >= 0 && ejection_fraction <= 25) { ejection_fraction_label = "0_25";}
-        else if (ejection_fraction > 25 && ejection_fraction <= 36) { ejection_fraction_label = "26_36";}
-        else if (ejection_fraction > 36 && ejection_fraction <= 47) { ejection_fraction_label = "37_47";}
-        else if (ejection_fraction > 47 && ejection_fraction <= 58) { ejection_fraction_label = "48_58";}
-        else if (ejection_fraction > 58 && ejection_fraction <= 69) { ejection_fraction_label = "59_69";}
-        else if (ejection_fraction > 69 && ejection_fraction <= 100) { ejection_fraction_label = "70_100";}
-        else txtErrEjectionFraction.setText("Do not exceed 100%");
+        if (ejection_fraction_input.isEmpty()) {
+            txtErrEjectionFraction.setText("Please enter a value.");
+        } else {
+            try {
+                int ejection_fraction = Integer.parseInt(ejection_fraction_input);
+                if (ejection_fraction >= 0 && ejection_fraction <= 25) { ejection_fraction_label = "0_25";}
+                else if (ejection_fraction > 25 && ejection_fraction <= 36) { ejection_fraction_label = "26_36";}
+                else if (ejection_fraction > 36 && ejection_fraction <= 47) { ejection_fraction_label = "37_47";}
+                else if (ejection_fraction > 47 && ejection_fraction <= 58) { ejection_fraction_label = "48_58";}
+                else if (ejection_fraction > 58 && ejection_fraction <= 69) { ejection_fraction_label = "59_69";}
+                else if (ejection_fraction > 69 && ejection_fraction <= 100) { ejection_fraction_label = "70_100";}
+                else txtErrEjectionFraction.setText("Please enter an integer between 1 and 100.");
+            } catch (NumberFormatException e) {
+                txtErrEjectionFraction.setText("Please enter an integer between 1 and 100.");
+            }
+        }
         
         String high_blood_pressure = cbxHighBloodPressure.getItemAt(cbxHighBloodPressure.getSelectedIndex());
           String high_blood_pressure_label = "";
@@ -341,37 +401,64 @@ public class GUI extends javax.swing.JFrame {
              high_blood_pressure_label = "0";
         }
         
-        int platelets = Integer.parseInt(txtPlatelets.getText());
+        String platelets_input = txtPlatelets.getText().trim();
         String platelets_label = "";
-        if (platelets >= 0 && platelets <= 116756) { platelets_label = "0_116756";}
-        else if (platelets > 116756 && platelets <= 208411) { platelets_label = "116757_208411";}
-        else if (platelets > 208411 && platelets <= 300067) { platelets_label = "208412_300067";}
-        else if (platelets > 300067 && platelets <= 391722) { platelets_label = "300068_391722";}
-        else if (platelets > 391722 && platelets <= 483378) { platelets_label = "391723_483378";}
-        else if (platelets > 483378 && platelets <= 575033) { platelets_label = "483379_575033";}
-        else if (platelets > 575033 && platelets <= 666689) { platelets_label = "575034_666689";}
-        else if (platelets > 666689 && platelets <= 758344) { platelets_label = "666690_758344";}
-        else if (platelets > 758344) { platelets_label = "758345_max";}
+        if (platelets_input.isEmpty()) {
+            txtErrPlatelets.setText("Please enter a value.");
+        } else {
+            try {
+                int platelets = Integer.parseInt(platelets_input);
+                if (platelets >= 0 && platelets <= 116756) { platelets_label = "0_116756";}
+                else if (platelets > 116756 && platelets <= 208411) { platelets_label = "116757_208411";}
+                else if (platelets > 208411 && platelets <= 300067) { platelets_label = "208412_300067";}
+                else if (platelets > 300067 && platelets <= 391722) { platelets_label = "300068_391722";}
+                else if (platelets > 391722 && platelets <= 483378) { platelets_label = "391723_483378";}
+                else if (platelets > 483378 && platelets <= 575033) { platelets_label = "483379_575033";}
+                else if (platelets > 575033 && platelets <= 666689) { platelets_label = "575034_666689";}
+                else if (platelets > 666689 && platelets <= 758344) { platelets_label = "666690_758344";}
+                else if (platelets > 758344) { platelets_label = "758345_max";}
+            } catch (NumberFormatException e) {
+                txtErrPlatelets.setText("Please enter an integer.");
+            }
+        }
 
-        Double serum_creatinine = Double.parseDouble(txtSerumCreatinine.getText());
+        String serum_creatinine_input = txtSerumCreatinine.getText().trim();
         String serum_creatinine_label = "";
-         if (serum_creatinine >= 0 && serum_creatinine <= 1.8) { serum_creatinine_label = "0_1.8";}
-        else if (serum_creatinine > 1.8 && serum_creatinine <= 3.0) { serum_creatinine_label = "1.9_3.0";}
-        else if (serum_creatinine > 3.0 && serum_creatinine <= 4.3) { serum_creatinine_label = "3.1_4.3";}
-        else if (serum_creatinine > 4.3 && serum_creatinine <= 5.6) { serum_creatinine_label = "4.4_5.6";}
-        else if (serum_creatinine > 5.6 && serum_creatinine <= 6.9) { serum_creatinine_label = "5.7_6.9";}
-        else if (serum_creatinine > 6.9 && serum_creatinine <= 8.1) { serum_creatinine_label = "7.0_8.1";}
-        else if (serum_creatinine > 8.1) { serum_creatinine_label = "8.2_max";}
+        if (platelets_input.isEmpty()) {
+            txtErrSerumCreatinine.setText("Please enter a value.");
+        } else {
+            try {
+                Double serum_creatinine = Double.parseDouble(serum_creatinine_input);
+                if (serum_creatinine >= 0 && serum_creatinine <= 1.8) { serum_creatinine_label = "0_1.8";}
+                else if (serum_creatinine > 1.8 && serum_creatinine <= 3.0) { serum_creatinine_label = "1.9_3.0";}
+                else if (serum_creatinine > 3.0 && serum_creatinine <= 4.3) { serum_creatinine_label = "3.1_4.3";}
+                else if (serum_creatinine > 4.3 && serum_creatinine <= 5.6) { serum_creatinine_label = "4.4_5.6";}
+                else if (serum_creatinine > 5.6 && serum_creatinine <= 6.9) { serum_creatinine_label = "5.7_6.9";}
+                else if (serum_creatinine > 6.9 && serum_creatinine <= 8.1) { serum_creatinine_label = "7.0_8.1";}
+                else if (serum_creatinine > 8.1) { serum_creatinine_label = "8.2_max";}
+            } catch (NumberFormatException e) {
+                txtErrSerumCreatinine.setText("Please enter a decimal number.");
+            }
+        }
 
-        int serum_sodium = Integer.parseInt(txtSerumSodium.getText());
+        String serum_sodium_input = txtSerumSodium.getText().trim();
         String serum_sodium_label = "";
-         if (serum_sodium >= 0 && serum_sodium <= 119) { serum_sodium_label = "0_119";}
-        else if (serum_sodium > 119 && serum_sodium <= 125) { serum_sodium_label = "120_125";}
-        else if (serum_sodium > 125 && serum_sodium <= 131) { serum_sodium_label = "126_131";}
-        else if (serum_sodium > 131 && serum_sodium <= 136) { serum_sodium_label = "132_136";}
-        else if (serum_sodium > 136 && serum_sodium <= 142) { serum_sodium_label = "137_142";}
-        else if (serum_sodium > 142) { serum_sodium_label = "143_max";}
-         
+        if (platelets_input.isEmpty()) {
+            txtErrSerumSodium.setText("Please enter a value.");
+        } else {
+            try {
+                int serum_sodium = Integer.parseInt(serum_sodium_input);
+                if (serum_sodium >= 0 && serum_sodium <= 119) { serum_sodium_label = "0_119";}
+                else if (serum_sodium > 119 && serum_sodium <= 125) { serum_sodium_label = "120_125";}
+                else if (serum_sodium > 125 && serum_sodium <= 131) { serum_sodium_label = "126_131";}
+                else if (serum_sodium > 131 && serum_sodium <= 136) { serum_sodium_label = "132_136";}
+                else if (serum_sodium > 136 && serum_sodium <= 142) { serum_sodium_label = "137_142";}
+                else if (serum_sodium > 142) { serum_sodium_label = "143_max";}
+            } catch (NumberFormatException e) {
+                txtErrSerumSodium.setText("Please enter an integer.");
+            }
+        }
+
         String sex = cbxSex.getItemAt(cbxSex.getSelectedIndex());
         String sex_label = "";
         if (sex.equals("Male")) {
@@ -388,18 +475,27 @@ public class GUI extends javax.swing.JFrame {
              smoking_label = "0";
         }
         
-        int time = Integer.parseInt(txtTime.getText());
+        String time_input = txtTime.getText().trim();
         String time_label = "";
-        if (time >= 0 && time <= 35) { time_label = "0_35";}
-        else if (time > 35 && time <= 66) { time_label = "36_66";}
-        else if (time > 66 && time <= 98) { time_label = "67_98";}
-        else if (time > 98 && time <= 129) { time_label = "99_129";}
-        else if (time > 129 && time <= 160) { time_label = "130_160";}
-        else if (time > 160 && time <= 191) { time_label = "161_191";}
-        else if (time > 191 && time <= 223) { time_label = "192_223";}
-        else if (time > 223 && time <= 254) { time_label = "224_254";}
-        else if (time > 254) { time_label = "255_max";}
-        
+        if (platelets_input.isEmpty()) {
+            txtErrTime.setText("Please enter a value.");
+        } else {
+            try {
+                int time = Integer.parseInt(time_input);
+                if (time >= 0 && time <= 35) { time_label = "0_35";}
+                else if (time > 35 && time <= 66) { time_label = "36_66";}
+                else if (time > 66 && time <= 98) { time_label = "67_98";}
+                else if (time > 98 && time <= 129) { time_label = "99_129";}
+                else if (time > 129 && time <= 160) { time_label = "130_160";}
+                else if (time > 160 && time <= 191) { time_label = "161_191";}
+                else if (time > 191 && time <= 223) { time_label = "192_223";}
+                else if (time > 223 && time <= 254) { time_label = "224_254";}
+                else if (time > 254) { time_label = "255_max";}
+            } catch (NumberFormatException e) {
+                txtErrTime.setText("Please enter an integer.");
+            }
+        }
+ 
         try {
             String result = nb.predict(age_label, anaemia_label, creatinine_phosphokinase_label, diabetes_label, ejection_fraction_label, high_blood_pressure_label, platelets_label, serum_creatinine_label, serum_sodium_label, sex_label, smoking_label, time_label);
             txtDeathEvent.setText(result);
@@ -421,12 +517,17 @@ public class GUI extends javax.swing.JFrame {
       txtCreatininePhosphokinase.setText("");
       txtDeathEvent.setText("");
       txtEjectionFraction.setText("");
-      txtErrAge.setText("");
-      txtErrEjectionFraction.setText("");
       txtPlatelets.setText("");
       txtSerumCreatinine.setText("");
       txtSerumSodium.setText("");
       txtTime.setText("");
+      txtErrAge.setText("");
+      txtErrEjectionFraction.setText("");
+      txtErrPlatelets.setText("");
+      txtErrCreatininePhosphokinase.setText("");
+      txtErrSerumCreatinine.setText("");
+      txtErrSerumSodium.setText("");
+      txtErrTime.setText("");
       cbxAnaemia.setSelectedIndex(0);
       cbxDiabetes.setSelectedIndex(0);
       cbxHighBloodPressure.setSelectedIndex(0);
@@ -496,7 +597,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel txtDeathEvent;
     private javax.swing.JTextField txtEjectionFraction;
     private javax.swing.JLabel txtErrAge;
+    private javax.swing.JLabel txtErrCreatininePhosphokinase;
     private javax.swing.JLabel txtErrEjectionFraction;
+    private javax.swing.JLabel txtErrPlatelets;
+    private javax.swing.JLabel txtErrSerumCreatinine;
+    private javax.swing.JLabel txtErrSerumSodium;
+    private javax.swing.JLabel txtErrTime;
     private javax.swing.JTextField txtPlatelets;
     private javax.swing.JTextField txtSerumCreatinine;
     private javax.swing.JTextField txtSerumSodium;

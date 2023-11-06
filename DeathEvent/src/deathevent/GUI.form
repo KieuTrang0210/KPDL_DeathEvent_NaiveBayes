@@ -28,164 +28,170 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="serum_sodium" alignment="0" min="-2" pref="285" max="-2" attributes="0"/>
-                              <Component id="sex" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                              <Component id="smoking" min="-2" pref="82" max="-2" attributes="0"/>
-                              <Component id="time" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtPlatelets" alignment="0" pref="223" max="32767" attributes="0"/>
-                              <Component id="txtSerumCreatinine" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtSerumSodium" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtTime" alignment="0" max="32767" attributes="0"/>
-                              <Component id="cbxSmoking" alignment="0" pref="223" max="32767" attributes="0"/>
-                              <Component id="cbxSex" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="diabetes" min="-2" pref="143" max="-2" attributes="0"/>
-                              <Component id="ejection_fraction" alignment="0" min="-2" pref="234" max="-2" attributes="0"/>
-                              <Component id="high_blood_pressure" min="-2" pref="220" max="-2" attributes="0"/>
-                              <Component id="anaemia" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
-                              <Component id="age" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
-                              <Component id="creatinine_phosphokinase" min="-2" pref="260" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtErrEjectionFraction" max="32767" attributes="0"/>
-                              <Component id="txtCreatininePhosphokinase" max="32767" attributes="0"/>
-                              <Component id="txtAge" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtEjectionFraction" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtErrAge" alignment="0" min="-2" pref="199" max="-2" attributes="0"/>
-                                      <Component id="cbxHighBloodPressure" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                                      <Component id="cbxDiabetes" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
-                                      <Component id="cbxAnaemia" alignment="0" min="-2" pref="94" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="0" pref="24" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cbxDiabetes" min="-2" pref="95" max="-2" attributes="0"/>
+                          <Component id="ejection_fraction" min="-2" pref="234" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="diabetes" min="-2" pref="143" max="-2" attributes="0"/>
+                                  <Component id="high_blood_pressure" alignment="0" min="-2" pref="220" max="-2" attributes="0"/>
+                                  <Component id="cbxHighBloodPressure" min="-2" pref="95" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="146" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="cbxSex" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Component id="sex" min="-2" pref="54" max="-2" attributes="0"/>
+                                  <Component id="smoking" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
+                                  <Component id="cbxSmoking" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <Component id="time" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
+                                  <Component id="txtTime" pref="217" max="32767" attributes="0"/>
+                                  <Component id="txtErrTime" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
+                          <Component id="txtEjectionFraction" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="age" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <Component id="txtAge" min="-2" pref="215" max="-2" attributes="0"/>
+                                  <Component id="anaemia" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                  <Component id="cbxAnaemia" alignment="0" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="creatinine_phosphokinase" alignment="0" min="-2" pref="260" max="-2" attributes="0"/>
+                                  <Component id="txtCreatininePhosphokinase" alignment="0" min="-2" pref="215" max="-2" attributes="0"/>
+                                  <Component id="txtErrCreatininePhosphokinase" alignment="0" min="-2" pref="353" max="-2" attributes="0"/>
+                                  <Component id="txtErrAge" alignment="0" min="-2" pref="275" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="platelets" min="-2" pref="308" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
                                   <Component id="serum_creatinine" min="-2" pref="326" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="btnPredict" min="-2" pref="94" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="txtSerumCreatinine" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                                  <Component id="serum_sodium" min="-2" pref="285" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="txtErrSerumSodium" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtSerumSodium" alignment="0" pref="217" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtErrSerumCreatinine" alignment="0" min="-2" pref="216" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="txtErrPlatelets" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="txtPlatelets" alignment="0" pref="215" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <Component id="btnReset" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel1" min="-2" pref="65" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtDeathEvent" min="-2" pref="112" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="txtErrEjectionFraction" alignment="0" min="-2" pref="276" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" pref="65" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtDeathEvent" min="-2" pref="112" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
+                      <Component id="btnPredict" min="-2" pref="94" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                      <Component id="btnReset" min="-2" pref="98" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="75" max="32767" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="age" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="platelets" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtAge" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPlatelets" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-              <Component id="txtErrAge" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cbxAnaemia" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="anaemia" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtCreatininePhosphokinase" min="-2" max="-2" attributes="0"/>
-                  <Component id="creatinine_phosphokinase" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="diabetes" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cbxDiabetes" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="ejection_fraction" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtErrAge" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="anaemia" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cbxAnaemia" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Component id="txtEjectionFraction" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtErrPlatelets" min="-2" pref="15" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="serum_creatinine" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtSerumCreatinine" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtErrEjectionFraction" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="txtErrSerumCreatinine" min="-2" pref="13" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="high_blood_pressure" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cbxHighBloodPressure" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="creatinine_phosphokinase" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="serum_sodium" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="platelets" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtPlatelets" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCreatininePhosphokinase" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtSerumSodium" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtErrCreatininePhosphokinase" pref="10" max="32767" attributes="0"/>
+                  <Component id="txtErrSerumSodium" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="serum_creatinine" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSerumCreatinine" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sex" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="diabetes" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="serum_sodium" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="txtSerumSodium" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="sex" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbxDiabetes" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cbxSex" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cbxSmoking" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ejection_fraction" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="smoking" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="time" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtTime" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtDeathEvent" max="32767" attributes="0"/>
-                  <Component id="jLabel1" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnReset" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="btnPredict" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="txtEjectionFraction" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbxSmoking" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtErrEjectionFraction" min="-2" pref="12" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="high_blood_pressure" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="time" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtTime" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbxHighBloodPressure" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtErrTime" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDeathEvent" min="-2" pref="25" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnPredict" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="btnReset" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -193,6 +199,12 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="btnPredict">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="ff" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Predict"/>
       </Properties>
       <Events>
@@ -236,12 +248,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="serum_creatinine">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Serum Creatinine (n&#x1ed3;ng &#x111;&#x1ed9; creatinine huy&#x1ebf;t thanh - mg/dL):"/>
+        <Property name="text" type="java.lang.String" value="Serum Creatinine (m&#x1ee9;c &#x111;&#x1ed9; creatinine huy&#x1ebf;t thanh - mg/dL):"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="serum_sodium">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Serum Sodium (n&#x1ed3;ng &#x111;&#x1ed9; natri huy&#x1ebf;t thanh - mEq/L):"/>
+        <Property name="text" type="java.lang.String" value="Serum Sodium (m&#x1ee9;c &#x111;&#x1ed9; natri huy&#x1ebf;t thanh - mEq/L):"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="sex">
@@ -390,11 +402,67 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnReset">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Reset"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResetActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrCreatininePhosphokinase">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrPlatelets">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrSerumCreatinine">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrSerumSodium">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtErrTime">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="2"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
