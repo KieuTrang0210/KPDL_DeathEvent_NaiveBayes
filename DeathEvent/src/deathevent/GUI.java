@@ -134,7 +134,7 @@ public class GUI extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 0, 204));
-        jLabel1.setText("Predict:");
+        jLabel1.setText("Result:");
 
         txtErrEjectionFraction.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         txtErrEjectionFraction.setForeground(new java.awt.Color(255, 0, 51));

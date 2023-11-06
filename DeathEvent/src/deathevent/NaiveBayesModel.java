@@ -105,7 +105,15 @@ public class NaiveBayesModel {
 
     public static void main(String[] args) throws Exception {
         NaiveBayesModel naive = new NaiveBayesModel();
+        
+//        mô hình đã được huấn luyện 
+        NaiveBayes nb = naive.train();
+        System.out.println(nb);
+        
+//        đánh giá mô hình
         naive.test();
+        
+//        dự đoán 1 mẫu mới 
         String result= naive.predict("0_48", "0", "0_894", "1", "26_36","0", "0_116756", "0_1.8","0_119", "0","1","36_66");
         System.out.println("Predict:" + result);
     }
