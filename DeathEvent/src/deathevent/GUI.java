@@ -84,7 +84,7 @@ public class GUI extends javax.swing.JFrame {
 
         anaemia.setText("Anaemia (thiếu máu):");
 
-        creatinine_phosphokinase.setText("Creatinine Phosphokinase (mcg/L):");
+        creatinine_phosphokinase.setText("Creatinine Phosphokinase (enzym CPK - mcg/L):");
 
         diabetes.setText("Diabetes (tiểu đường):");
 
@@ -102,7 +102,7 @@ public class GUI extends javax.swing.JFrame {
 
         smoking.setText("Smoking:");
 
-        time.setText("Time:");
+        time.setText("Time (thời gian theo dõi - ngày):");
 
         txtAge.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,8 +158,8 @@ public class GUI extends javax.swing.JFrame {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(serum_sodium, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(sex, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(smoking, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(smoking, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(59, 59, 59)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(txtPlatelets, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
@@ -170,13 +170,13 @@ public class GUI extends javax.swing.JFrame {
                                 .addComponent(cbxSex, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(creatinine_phosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(diabetes, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(ejection_fraction, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(high_blood_pressure, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(anaemia, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(110, 110, 110)
+                                .addComponent(age, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(creatinine_phosphokinase, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(84, 84, 84)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(txtErrEjectionFraction, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(txtCreatininePhosphokinase)
@@ -293,7 +293,7 @@ public class GUI extends javax.swing.JFrame {
         else if (age > 71 && age <= 79) { age_label = "72_79";}
         else if (age > 79 && age <= 87) { age_label = "80_87";}
         else if (age > 87 && age <= 120) { age_label = "88_120";}
-        else txtErrAge.setText("Not Valid");
+        else txtErrAge.setText("Invalid age");
         
         String anaemia = cbxAnaemia.getItemAt(cbxAnaemia.getSelectedIndex());
         String anaemia_label = "";

@@ -28,7 +28,6 @@ public class NaiveBayesModel {
 
         NaiveBayes nb = new NaiveBayes();
         nb.buildClassifier(trainData);
-        SerializationHelper.write("naive_bayes.model", nb);
         return nb;
     }
 
@@ -45,13 +44,15 @@ public class NaiveBayesModel {
         int incorrectClassifications = 0;
 
         for (int i = 0; i < testData.numInstances(); i++) {
+            
             double actualClass = testData.instance(i).classValue();
-            String actual = testData.classAttribute().value((int) actualClass);
+            String actualClassName = testData.classAttribute().value((int) actualClass);
+            
             Instance newInst = testData.instance(i);
-            double predNB = nb.classifyInstance(newInst);
-            String pred = testData.classAttribute().value((int) predNB);
-
-            if (pred.equals(actual)) {
+            double predClass = nb.classifyInstance(newInst);
+            String predClassName = testData.classAttribute().value((int) predClass);
+            
+            if (predClassName.equals(actualClassName)) {
                 correctClassifications++;
             } else {
                 incorrectClassifications++;
@@ -61,7 +62,7 @@ public class NaiveBayesModel {
         int totalTestInstances = testData.numInstances();
         double accuracy = (double) correctClassifications / totalTestInstances;
         double errorRate = (double) incorrectClassifications / totalTestInstances;
-        System.out.println("Correctly Classified Instances " + correctClassifications + " " + (accuracy * 100) + " %");
+        System.out.println("Correctly Classified Instances  " + correctClassifications + " " + (accuracy * 100) + " %");
         System.out.println("Incorrectly Classified Instances " + incorrectClassifications + " " + (errorRate * 100) + " %");
     }
 
@@ -105,7 +106,7 @@ public class NaiveBayesModel {
     public static void main(String[] args) throws Exception {
         NaiveBayesModel naive = new NaiveBayesModel();
         naive.test();
-//        String result= naive.predict("0_48", "0", "0_894", "1", "26_36","0", "0_116756", "0_1.8","0_119", "0","1","36_66");
-//        System.out.println(result);
+        String result= naive.predict("0_48", "0", "0_894", "1", "26_36","0", "0_116756", "0_1.8","0_119", "0","1","36_66");
+        System.out.println("Predict:" + result);
     }
 }

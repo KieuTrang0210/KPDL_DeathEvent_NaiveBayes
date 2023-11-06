@@ -36,8 +36,8 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="serum_sodium" alignment="0" min="-2" pref="285" max="-2" attributes="0"/>
                               <Component id="sex" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
-                              <Component id="time" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
                               <Component id="smoking" min="-2" pref="82" max="-2" attributes="0"/>
+                              <Component id="time" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -51,14 +51,14 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="creatinine_phosphokinase" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
                               <Component id="diabetes" min="-2" pref="143" max="-2" attributes="0"/>
                               <Component id="ejection_fraction" alignment="0" min="-2" pref="234" max="-2" attributes="0"/>
                               <Component id="high_blood_pressure" min="-2" pref="220" max="-2" attributes="0"/>
                               <Component id="anaemia" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
                               <Component id="age" alignment="0" min="-2" pref="104" max="-2" attributes="0"/>
+                              <Component id="creatinine_phosphokinase" min="-2" pref="260" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="txtErrEjectionFraction" max="32767" attributes="0"/>
                               <Component id="txtCreatininePhosphokinase" max="32767" attributes="0"/>
@@ -211,7 +211,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="creatinine_phosphokinase">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Creatinine Phosphokinase (mcg/L):"/>
+        <Property name="text" type="java.lang.String" value="Creatinine Phosphokinase (enzym CPK - mcg/L):"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="diabetes">
@@ -256,7 +256,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="time">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Time:"/>
+        <Property name="text" type="java.lang.String" value="Time (th&#x1edd;i gian theo d&#xf5;i - ng&#xe0;y):"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtAge">
